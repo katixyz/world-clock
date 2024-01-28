@@ -5,10 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.37/moment-timezone-with-data-1970-2030.min.js"></script>
 
     <title>World clock</title>
   </head>
   <body>
+    <h1>World clock</h1>
+    <form action="">
+      <select name="cities" id="cities">
+        <option value="">Select a city</option>
+        <option value="paris">Paris</option>
+        <option value="tokyo">Tokyo</option>
+        <option value="sydney">Sydney</option>
+      </select>
+    </form>
+
+    <div class="localTime" id="localTime"></div>
+    <div class="chosenCity" id="chosenCity"></div>
+
+    <footer>
+      This AI Project is coded by
+      <a href="https://github.com/katixyz" target="_blank"> Kati Zech</a>, is
+      open-sourced on
+      <a href="https://github.com/katixyz/world-clock" target="_blank"
+        >GitHub</a
+      >
+      and hosted on
+      <a href="https://world-clock-by-kati.netlify.app/" target="_blank"
+        >Netlify</a
+      >.
+    </footer>
+
     <script src="src/script.js"></script>
   </body>
 </html>
