@@ -1,17 +1,13 @@
 function showTime(event) {
-  if (event.target.value.length > 0) {
-    let cityTimezone = event.target.value;
-    let cityName = cityTimezone.replace("_", " ").split("/")[1];
-
-    let currentTime = moment().tz(cityTimezone);
-
-    let date = document.querySelector("#selected-city .date");
-    date.innerHTML = currentTime.format("dddd, Do MMMM, YYYY");
-    let time = document.querySelector("#selected-city .time");
-    time.innerHTML = currentTime.format("h:mm:ss [<small>]a[</small>]");
-    let city = document.querySelector("#timezone");
-    city.innerHTML = cityName;
-  }
+  let cityTimezone = event.target.value;
+  let cityName = cityTimezone.replace("_", " ").split("/")[1];
+  let currentTime = moment().tz(cityTimezone);
+  let date = document.querySelector("#selected-city .date");
+  date.innerHTML = currentTime.format("dddd, Do MMMM, YYYY");
+  let time = document.querySelector("#selected-city .time");
+  time.innerHTML = currentTime.format("h:mm:ss [<small>]a[</small>]");
+  let city = document.querySelector("#timezone");
+  city.innerHTML = cityName;
 }
 
 let citiesSelect = document.querySelector("#cities");
