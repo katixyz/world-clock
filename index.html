@@ -16,9 +16,9 @@
       <form action="">
         <select name="cities" id="cities">
           <option value="">Select a city</option>
-          <option value="paris">Paris</option>
-          <option value="tokyo">Tokyo</option>
-          <option value="sydney">Sydney</option>
+          <option value="Europe/London">London</option>
+          <option value="Asia/Tokyo">Tokyo</option>
+          <option value="Australia/Sydney">Sydney</option>
         </select>
       </form>
 
@@ -30,12 +30,12 @@
         <div class="time" id="localTime">12:30 <small>AM</small></div>
       </div>
 
-      <div class="city">
+      <div class="city" id="selected-city">
         <div>
-          <h2>Selected City</h2>
-          <div class="date">31. January 2024</div>
+          <h2 id="timezone"></h2>
+          <div class="date" id="date"></div>
         </div>
-        <div class="time" id="localTime">12:30 <small>AM</small></div>
+        <div class="time" id="time"></div>
       </div>
     </div>
 
