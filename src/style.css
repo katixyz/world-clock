@@ -30,6 +30,9 @@ select {
   margin: 20px 0;
   padding-bottom: 20px;
   justify-content: space-between;
+}
+
+.line {
   border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
 
@@ -52,6 +55,12 @@ h2 {
   font-size: 20px;
   vertical-align: text-top;
   line-height: 40px;
+}
+
+.city-name small {
+  font-size: 16px;
+  opacity: 0.8;
+  vertical-align: 3px;
 }
 
 footer {

@@ -19,7 +19,7 @@ function showLocalTime() {
   let localTimezone = moment.tz.guess();
   let localCity = localTimezone.replace("_", " ").split("/")[1];
   let localTimezoneElement = document.querySelector("#localTimezone");
-  localTimezoneElement.innerHTML = localCity;
+  localTimezoneElement.innerHTML = `${localCity} <small>(current location)</small>`;
   let localDate = document.querySelector("#localDate");
   localDate.innerHTML = moment.tz(localTimezone).format("dddd, Do MMMM, YYYY");
   let localTime = document.querySelector("#localTime");
