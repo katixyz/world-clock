@@ -11,18 +11,33 @@
     <title>World clock</title>
   </head>
   <body>
-    <h1>World clock</h1>
-    <form action="">
-      <select name="cities" id="cities">
-        <option value="">Select a city</option>
-        <option value="paris">Paris</option>
-        <option value="tokyo">Tokyo</option>
-        <option value="sydney">Sydney</option>
-      </select>
-    </form>
+    <div class="container">
+      <h1>World clock</h1>
+      <form action="">
+        <select name="cities" id="cities">
+          <option value="">Select a city</option>
+          <option value="paris">Paris</option>
+          <option value="tokyo">Tokyo</option>
+          <option value="sydney">Sydney</option>
+        </select>
+      </form>
 
-    <div class="localTime" id="localTime"></div>
-    <div class="chosenCity" id="chosenCity"></div>
+      <div class="city">
+        <div>
+          <h2>Local City</h2>
+          <div class="date">31. January 2024</div>
+        </div>
+        <div class="time" id="localTime">12:30 <small>AM</small></div>
+      </div>
+
+      <div class="city">
+        <div>
+          <h2>Selected City</h2>
+          <div class="date">31. January 2024</div>
+        </div>
+        <div class="time" id="localTime">12:30 <small>AM</small></div>
+      </div>
+    </div>
 
     <footer>
       This AI Project is coded by
